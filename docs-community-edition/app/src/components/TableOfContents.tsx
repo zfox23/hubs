@@ -1,6 +1,6 @@
 import React from 'react';
-import { useHeadings } from '../../hooks/useHeadings';
-import { linearScale } from '../../shared/lib/utilities';
+import { useHeadings } from '../hooks/useHeadings';
+import { linearScale } from '../lib/utilities';
 
 export const TableOfContents = ({ className }: { className?: string }) => {
     const headings = useHeadings();
