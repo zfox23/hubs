@@ -25,25 +25,6 @@ export const WhatIsCommunityEdition = ({ }) => {
             <p>To resolve these issues and more, the Hubs team sunset Hubs Cloud and launched <span className='font-semibold'>Hubs Community Edition</span>.</p>
             <p>With <span className='font-semibold'>Hubs CE</span>, anyone can deploy the <i>full Hubs stack</i> on <i>any</i> Linux-based infrastrucure, including AWS, Google Cloud, and even your own Linux computer.</p>
 
-            <h3 id="full-hubs-stack" className='text-xl font-semibold opacity-90'><a href="#full-hubs-stack" className='hover:underline'>What do you mean by "Full Hubs Stack"?</a></h3>
-            <Divider className='!mt-1' />
-
-            <p>The product known as "Mozilla Hubs" is comprised of several powerful pieces of software. For example, when you visit a Hub with your Web browser, you are interacting with the Hubs Client. <a className='underline' target="_blank" href='https://github.com/mozilla/hubs/'>You can read the client's JavaScript source code here on GitHub.<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></p>
-
-            <p>The Hubs Client itself interacts with several <i>other</i> pieces of software, such as:</p>
-            <ul className='ml-4 !mt-1 list-disc'>
-                <li>
-                    <p><a className='underline' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>Dialog,<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a> Hubs' WebRTC voice and video communication server</p>
-                </li>
-                <li>
-                    <p><a className='underline' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>Reticulum,<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a> Hubs' networking and API server</p>
-                </li>
-            </ul>
-
-            <p>The Hubs Client, Dialog, and Reticulum are just three components of a larger <i>stack</i> of software. Each of those stack's components are individually configured and networked to other components in order to make Hubs work properly.</p>
-            
-            <p>Rather than require developers to download, install, configure, and connect each of the stack's components individually, the Hubs team has developed the product known as "Community Edition". CE simplifies and automates most of that complex deployment process.</p>
-
             <p>Continue reading to learn how to deploy Hubs Community Edition. You can also <a className="underline" href="#hubs-ce-components">skip ahead to learn more about the significant components of the Hubs CE software stack.</a></p>
 
             <HubsDivider className='w-full max-w-6xl' />
