@@ -10,7 +10,7 @@ export const Introduction = ({ }) => {
             <Divider className='!mt-1' />
             <p><span className='font-semibold'>Welcome to Mozilla Hubs Community Edition,</span> a <i>self-hosted</i> virtual worlds platform for educators, teams, and organizations.</p>
             <p>By reading this document, you will:</p>
-            <ul className='list-disc ml-4 !mt-2'>
+            <ul className='list-disc ml-5 !mt-2'>
                 <li><a className='underline' href="#what-is-hubs-ce">Learn more</a> about what Hubs Community Edition is</li>
                 <li>Understand how to <a className='underline' href="#deploying-hubs-to-gcp">deploy Community Edition to Google Cloud Platform</a></li>
                 <li>Learn how to <a className='underline' href="#deploying-hubs-to-unix">deploy Community Edition to your own Unix-based server stack</a></li>
