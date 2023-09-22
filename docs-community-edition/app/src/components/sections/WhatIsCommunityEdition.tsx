@@ -5,7 +5,7 @@ import { HubsDivider } from '../HubsDivider';
 
 export const WhatIsCommunityEdition = ({ }) => {
     return (
-        <div className='py-4 px-2 md:px-4 w-full max-w-4xl space-y-4'>
+        <div className='p-2 w-full max-w-4xl space-y-4'>
             <h2 id="what-is-hubs-ce" className='text-3xl font-semibold'><a href="#what-is-hubs-ce" className='hover:underline'>What is Hubs Community Edition?</a></h2>
             <Divider className='!mt-1' />
             <p>Prior to the release of Community Edition, people who wanted to create their own Hub could either:</p>
@@ -25,7 +25,7 @@ export const WhatIsCommunityEdition = ({ }) => {
             <p>To resolve these issues and more, the Hubs team sunset Hubs Cloud and launched <span className='font-semibold'>Hubs Community Edition</span>.</p>
             <p>With <span className='font-semibold'>Hubs CE</span>, anyone can deploy the <i>full Hubs stack</i> on <i>any</i> Linux-based infrastrucure, including AWS, Google Cloud, and even your own Linux computer.</p>
 
-            <p>Continue reading to learn how to deploy Hubs Community Edition. You can also <a className="underline" href="#hubs-ce-components">skip ahead to learn more about the significant components of the Hubs CE software stack.</a></p>
+            <p>Continue reading to learn how to deploy Hubs Community Edition. You can also <a className="underline" href="#hubs-ce-infrastructure">skip ahead to learn more about the infrastructure of the Hubs CE software stack.</a></p>
 
             <HubsDivider className='w-full max-w-6xl' />
         </div>

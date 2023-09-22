@@ -5,7 +5,7 @@ import { HubsDivider } from '../HubsDivider';
 
 export const DeployToCustom = ({ }) => {
     return (
-        <div className='py-4 px-2 md:px-4 w-full max-w-4xl space-y-4'>
+        <div className='p-2 w-full max-w-4xl space-y-4'>
             <h2 id="deploying-hubs-to-unix" className='text-3xl font-semibold'><a href="#deploying-hubs-to-unix" className='hover:underline'>Deploying Hubs to a Custom Unix System</a></h2>
             <Divider className='!mt-1' />
             <p></p>

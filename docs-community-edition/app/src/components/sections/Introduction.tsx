@@ -5,7 +5,7 @@ import { HubsDivider } from '../HubsDivider';
 
 export const Introduction = ({ }) => {
     return (
-        <div className='py-4 px-2 md:px-4 w-full max-w-4xl space-y-4'>
+        <div className='p-2 w-full max-w-4xl space-y-4'>
             <h2 id="introduction" className='text-3xl font-semibold'><a href="#introduction" className='hover:underline'>Introduction</a></h2>
             <Divider className='!mt-1' />
             <p><span className='font-semibold'>Welcome to Mozilla Hubs Community Edition,</span> a <i>self-hosted</i> virtual worlds platform for educators, teams, and organizations.</p>
@@ -14,7 +14,7 @@ export const Introduction = ({ }) => {
                 <li><a className='underline' href="#what-is-hubs-ce">Learn more</a> about what Hubs Community Edition is</li>
                 <li>Understand how to <a className='underline' href="#deploying-hubs-to-gcp">deploy Community Edition to Google Cloud Platform</a></li>
                 <li>Learn how to <a className='underline' href="#deploying-hubs-to-unix">deploy Community Edition to your own Unix-based server stack</a></li>
-                <li><a className='underline' href="#hubs-ce-components">Explore the technology</a> underlying Hubs Community Edition</li>
+                <li><a className='underline' href="#hubs-ce-infrastructure">Explore the infrastructure</a> underlying Hubs Community Edition</li>
             </ul>
             <p>You can <a className='underline' target="_blank" href='https://hubs.mozilla.com/labs/professional-plan-and-community-edition/'>read Mozilla's Community Edition announcement from July on Hubs Creator labs here.<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></p>
 
