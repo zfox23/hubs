@@ -17,19 +17,19 @@ export const HubsCEComponents = ({ }) => {
                     <StaticImage className='w-full max-w-2xl rounded-md' quality={100} src='../../images/universe.png' alt="An image of the Southern Ring Nebula overlaid with a Carl Sagan quote: 'If you wish to bake an apple pie from scratch, you must first invent the universe.'" />
                 </div>
 
-                <p>The product known as "Mozilla Hubs" is comprised of several powerful pieces of software. For example, when you visit a Hub with your Web browser, you are interacting with the Hubs Client. <a className='underline' target="_blank" href='https://github.com/mozilla/hubs/'>You can read the client's JavaScript source code here on GitHub.<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></p>
+                <p>The product known as "Mozilla Hubs" is comprised of several powerful pieces of software. For example, when you visit a Hub with your Web browser, you are interacting with the Hubs Client. <a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://github.com/mozilla/hubs/'>You can read the client's JavaScript source code here on GitHub.<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></p>
 
-                <p>The Hubs Client itself interacts with several <i>other</i> pieces of software, such as:</p>
+                <p>The Hubs Client itself interacts with several <i className='font-semibold'>other</i> pieces of software, such as:</p>
                 <ul className='ml-5 !mt-1 list-disc'>
-                    <li><a className='underline' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>Reticulum,<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a> Hubs' networking and API server</li>
-                    <li><a className='underline' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>Dialog,<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a> Hubs' WebRTC voice and video communication server</li>
+                    <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>Reticulum,<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a> Hubs' networking and API server</li>
+                    <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>Dialog,<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a> Hubs' WebRTC voice and video communication server</li>
                 </ul>
 
-                <p>The Hubs Client, Dialog, and Reticulum are just three components of a larger <i>stack</i> of software. Each of those stack's components are individually configured and networked to other components in order to make Hubs work properly.</p>
+                <p>The Hubs Client, Dialog, and Reticulum are just three components of a larger <i className='font-semibold'>stack</i> of software. Each of those stack's components are individually configured and networked to other components in order to make Hubs work properly.</p>
 
-                <p>Rather than require developers to download, install, configure, connect, and update each of the stack's components individually, the Hubs team has developed the product known as "Hubs Community Edition". Hubs CE simplifies and automates most of that complex deployment process using software called <span className='font-semibold'>Kubernetes</span>, which is a containerized software orchestration system.</p>
+                <p>Rather than require developers to download, install, configure, connect, and update each of the stack's components individually, the Hubs team has developed the product known as "Hubs Community Edition". Hubs CE simplifies and automates most of that complex deployment process using software called <span className='font-semibold'>Kubernetes</span>, which is a <span className='font-semibold'>containerized software orchestration system</span>.</p>
 
-                <p>If you are already familiar with containerized software and Kubernetes, <a className='underline' href='#hubs-containers'>tap here to skip ahead to the "Hubs' Containerized Services" section.</a></p>
+                <p>If you are already familiar with containerized software and Kubernetes, <a className='underline text-blue-900 dark:text-blue-100' href='#hubs-containers'>tap here to skip ahead to the "Hubs' Containerized Services" section.</a></p>
             </div>
 
             <div className='w-full max-w-4xl space-y-4 p-2'>
@@ -47,9 +47,25 @@ export const HubsCEComponents = ({ }) => {
 
                 <p>Imagine if you could package up the complete state of your Web browser installation - including its configuration settings, logged-in accounts, extensions, browser history, favorites, and more - and make use of that package on any other computer, regardless of operating system.</p>
 
-                <p>Similarly, imagine if you could package up the complete state of <i>any</i> application - including its dependencies, libraries, configuration files, and application code - and run that package on any other computer...</p>
+                <p>Similarly, imagine if you could package up the complete state of <i className='font-semibold'>any</i> application - including its dependencies, libraries, configuration files, and application code - and run that package on any other computer...</p>
 
-                <p><i>This is possible</i> using open-source software called Docker. A <i>Docker Container</i> is a process executed on a computer that runs its own packaged and configured software. You can learn more about Docker and Docker Containers <a className='underline' target="_blank" href='https://docs.docker.com/get-started/'>here on Docker Docs<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>.</p>
+                <p><i className='font-semibold'>This is possible</i> using open-source software called Docker. A <i className='font-semibold'>Docker Container</i> is a process executed on a computer that runs its own packaged and configured software. You can learn more about Docker and Docker Containers <a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://docs.docker.com/get-started/'>here on Docker Docs<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>.</p>
+
+                <div className='p-4 rounded-md bg-green-50 dark:bg-green-800/20 relative'>
+                    <div className='p-1 overflow-clip w-16 absolute top-0.5 left-0 bottom-0 flex items-start justify-center z-0'>
+                        <AcademicCapIcon className='text-green-300 dark:text-green-600/40 opacity-50' />
+                    </div>
+                    <div className='z-10 relative space-y-2'>
+                        <p>It is common for self-hosted software to be distributed as Docker Containers to aid in swift software deployment with minimal configuration.</p>
+
+                        <p>Other examples of popular software that is packaged as a Docker Container include:</p>
+                        <ul className='list-disc !mt-1 ml-5'>
+                            <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://hub.docker.com/_/wordpress'>Wordpress <ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>, the blogging system</li>
+                            <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://hub.docker.com/_/nextcloud'>Nextcloud <ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>, a suite of content collaboration software</li>
+                            <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://hub.docker.com/_/ubuntu'>Ubuntu <ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>, the entire Linux distribution</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <p><span className='font-semibold'>Many components of Hubs Community Edition runs inside separate Docker Containers.</span> By themselves, these Containers don't know much about each other. For example, if you ran the <code>Reticulum</code> Container on your computer, but didn't run the <code>Dialog WebRTC communication</code> Container, people who connected to your Hub would be able to see each other, but not hear each other.</p>
 
@@ -70,7 +86,7 @@ export const HubsCEComponents = ({ }) => {
                 </div>
 
                 <div className='w-full space-y-4 max-w-4xl p-2'>
-                    <p>Kubernetes, shortened to K8s, acts as an <i>organizer</i> for containerized software.</p>
+                    <p>Kubernetes, shortened to K8s, acts as an <i className='font-semibold'>organizer</i> for containerized software.</p>
 
                     <p>A Kubernetes deployment, called a "cluster," consists of two parts:</p>
                     <ol className='list-decimal !mt-1 ml-5'>
@@ -90,7 +106,7 @@ export const HubsCEComponents = ({ }) => {
                         </li>
                     </ol>
 
-                    <p>To deploy software built using Kubernetes, a developer must supply the K8s executable with a plain-text configuration file describing relevant containers, the computing resources that a container needs to function, networking information, and more. This configuration file is called a <a className='underline' target="_blank" href='https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment'>deployment spec<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>.</p>
+                    <p>To deploy software built using Kubernetes, a developer must supply the K8s executable with a plain-text configuration file describing relevant containers, the computing resources that a container needs to function, networking information, and more. This configuration file is called a <a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment'>deployment spec<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>.</p>
 
                     <div className='p-4 rounded-md bg-green-50 dark:bg-green-800/20 relative'>
                         <div className='p-1 overflow-clip w-16 absolute top-0.5 left-0 bottom-0 flex items-start justify-center z-0'>
@@ -105,14 +121,14 @@ export const HubsCEComponents = ({ }) => {
                     <p>Kubernetes clusters can be deployed on many types of computers, including:</p>
                     <ul className='list-disc ml-5 !mt-1'>
                         <li>Your home desktop computer</li>
-                        <li><a className='underline' target="_blank" href='https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi'>Two $35 Raspberry Pi computers<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
+                        <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://ubuntu.com/tutorials/how-to-kubernetes-cluster-on-raspberry-pi'>Two $35 Raspberry Pi computers<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
                         <li>
                             <p>Computers owned by a cloud services provider, such as:</p>
                             <ul className='list-disc ml-5'>
-                                <li><a className='underline' target="_blank" href='https://cloud.google.com/kubernetes-engine'>Google Kubernetes Engine (GKE)<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
-                                <li><a className='underline' target="_blank" href='https://aws.amazon.com/eks/'>Amazon Elastic Kubernetes Service (EKS)<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
-                                <li><a className='underline' target="_blank" href='https://azure.microsoft.com/en-us/products/kubernetes-service'>Microsoft Azure Kubernetes Service (AKS)<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
-                                <li><a className='underline' target="_blank" href='https://www.digitalocean.com/products/kubernetes'>DigitalOcean Kubernetes <ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
+                                <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://cloud.google.com/kubernetes-engine'>Google Kubernetes Engine (GKE)<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
+                                <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://aws.amazon.com/eks/'>Amazon Elastic Kubernetes Service (EKS)<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
+                                <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://azure.microsoft.com/en-us/products/kubernetes-service'>Microsoft Azure Kubernetes Service (AKS)<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
+                                <li><a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://www.digitalocean.com/products/kubernetes'>DigitalOcean Kubernetes <ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a></li>
                             </ul>
                         </li>
                     </ul>

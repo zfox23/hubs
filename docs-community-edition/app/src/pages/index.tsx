@@ -82,7 +82,7 @@ const IndexPage = ({ }) => {
                     <Introduction />
                 </div>
 
-                <div className='!mt-4 w-full flex justify-center bg-slate-200/60 dark:bg-neutral-700 border-y-2 border-slate-300/40 dark:border-neutral-600'>
+                <div className='!mt-4 w-full flex justify-center bg-slate-200/60 dark:bg-neutral-800 border-y-2 border-slate-300/40 dark:border-neutral-700'>
                     <div className='w-full max-w-4xl py-4 px-2 md:px-4'>
                         <h2 id="navigation" className='text-3xl font-semibold hover:underline'><a href="#navigation">Navigation</a></h2>
                         <Divider className='!mt-1' />
