@@ -119,17 +119,17 @@ export const HubsCEComponents = ({ }) => {
                 </div>
             </div>
 
-            <div className='w-full max-w-4xl space-y-4 p-2'>
-                <div>
-                    <h3 id="hubs-containers" className='text-xl font-semibold'><a href="#hubs-containerized-services" className='hover:underline'>Hubs' Containerized Services</a></h3>
+            <div className='w-full max-w-4xl space-y-4'>
+                <div className='p-2'>
+                    <h3 id="hubs-containers" className='text-xl font-semibold'><a href="#hubs-containers" className='hover:underline'>Hubs' Containerized Services</a></h3>
                     <Divider className='!mt-1' />
                     <p>What follows is a table of each Container that makes up Hubs Community Edition:</p>
                 </div>
 
-                <table className='w-full inline-block mt-4 md:w-auto table-auto overflow-x-auto rounded-md'>
+                <table className='w-full inline-block mt-4 md:w-auto table-auto overflow-x-auto md:rounded-md'>
                     <thead className='text-xs uppercase bg-slate-700 text-slate-100'>
                         <tr>
-                            <th scope="col" className="px-1 py-3">Container</th>
+                            <th scope="col" className="px-1 py-3">Service</th>
                             <th scope="col" className="px-6 py-3">Purpose</th>
                         </tr>
                     </thead>
@@ -140,7 +140,7 @@ export const HubsCEComponents = ({ }) => {
                                 <a className='underline text-sm' target="_blank" href='https://github.com/mozilla/hubs/'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
                             </div>
                         } cols={[
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel lectus vel nisl tincidunt tristique. Pellentesque non magna mauris.</p>
+                            <p>The Hubs client for Web browsers.</p>
                         ]} />
                         <TableRow col1={
                             <div className='flex flex-col items-center gap-0'>
@@ -148,7 +148,7 @@ export const HubsCEComponents = ({ }) => {
                                 <a className='underline text-sm' target="_blank" href='https://github.com/mozilla/reticulum/'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
                             </div>
                         } cols={[
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel lectus vel nisl tincidunt tristique. Pellentesque non magna mauris.</p>
+                            <p>Hubs' networking and API server. Handles client authorization, avatar positioning, object manipulation, and way more.</p>
                         ]} />
                         <TableRow col1={
                             <div className='flex flex-col items-center gap-0'>
@@ -156,7 +156,21 @@ export const HubsCEComponents = ({ }) => {
                                 <a className='underline text-sm' target="_blank" href='https://github.com/mozilla/dialog/'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
                             </div>
                         } cols={[
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel lectus vel nisl tincidunt tristique. Pellentesque non magna mauris.</p>
+                            <div>
+                                <p>A WebRTC audio and video communication server.</p>
+                                <p>Contains a WebRTC Selective Forwarding Unit. For more information about how Hubs uses WebRTC, visit <a className='underline' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>this resource<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>.</p>
+                            </div>
+                        ]} />
+                        <TableRow col1={
+                            <div className='flex flex-col items-center gap-0'>
+                                <h4 id="container-coturn" className='text-xl font-semibold text-center'><a href="#container-coturn" className='hover:underline'><code>coturn</code></a></h4>
+                                <a className='underline text-sm' target="_blank" href='https://github.com/coturn/coturn'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
+                            </div>
+                        } cols={[
+                            <div>
+                                <p>A TURN and STUN server used for WebRTC communication.</p>
+                                <p>For more information about how Hubs uses WebRTC, visit <a className='underline' target="_blank" href='https://zachfox.io/hubs-webrtc-tester/about/'>this resource<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>.</p>
+                            </div>
                         ]} />
                         <TableRow col1={
                             <div className='flex flex-col items-center gap-0'>
@@ -164,28 +178,58 @@ export const HubsCEComponents = ({ }) => {
                                 <a className='underline text-sm' target="_blank" href='https://github.com/mozilla/spoke/'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
                             </div>
                         } cols={[
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel lectus vel nisl tincidunt tristique. Pellentesque non magna mauris.</p>
+                            <p>A web-based content authoring tool used to create custom 3D environments for Hubs.</p>
                         ]} />
                         <TableRow col1={
                             <div className='flex flex-col items-center gap-0'>
-                                <h4 id="container-etc" className='text-xl font-semibold text-center'><a href="#container-etc" className='hover:underline'><code>not done yet...there are way more</code></a></h4>
-                                <a className='underline text-sm' target="_blank" href='https://github.com/mozilla/hubs/'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
+                                <h4 id="container-nearspark" className='text-xl font-semibold text-center'><a href="#container-nearspark" className='hover:underline'><code>nearspark</code></a></h4>
+                                <a className='underline text-sm' target="_blank" href='https://github.com/MozillaReality/nearspark'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
                             </div>
                         } cols={[
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel lectus vel nisl tincidunt tristique. Pellentesque non magna mauris.</p>
+                            <p>A service used to generate thumbnails from images.</p>
+                        ]} />
+                        <TableRow col1={
+                            <div className='flex flex-col items-center gap-0'>
+                                <h4 id="container-speelycaptor" className='text-xl font-semibold text-center'><a href="#container-speelycaptor" className='hover:underline'><code>speelycaptor</code></a></h4>
+                                <a className='underline text-sm' target="_blank" href='https://github.com/mozilla/speelycaptor'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
+                            </div>
+                        } cols={[
+                            <p>A service used to convert video to a Hubs-compatible format. Uses <code>ffmpeg</code>.</p>
+                        ]} />
+                        <TableRow col1={
+                            <div className='flex flex-col items-center gap-0'>
+                                <h4 id="container-pgbouncer" className='text-xl font-semibold text-center'><a href="#container-pgbouncer" className='hover:underline'><code>PgBouncer</code></a></h4>
+                                <a className='underline text-sm' target="_blank" href='https://www.pgbouncer.org/install.html'>(website)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
+                            </div>
+                        } cols={[
+                            <div>
+                                <p>A lightweight connection pooler for PostgreSQL.</p>
+                                <p>Rather than making new, expensive PostgreSQL database connections for every client or query, a "connection pooler" creates a long-lived group of connections to a database, and reuses those connections as necessary. This improves database access performance and availability.</p>
+                            </div>
+                        ]} />
+                        <TableRow col1={
+                            <div className='flex flex-col items-center gap-0'>
+                                <h4 id="container-etc" className='text-xl font-semibold text-center'><a href="#container-etc" className='hover:underline'><code>photomnemonic</code></a></h4>
+                                <a className='underline text-sm' target="_blank" href='https://github.com/MozillaReality/photomnemonic'>(source)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
+                            </div>
+                        } cols={[
+                            <div>
+                                <p>A service used to take screenshots of websites.</p>
+                                <p><span className='font-semibold'>Will not function</span> in Community Edition initally, since the current iteration of the service relies on S3. A local storage update is in development.</p>
+                            </div>
                         ]} />
                     </tbody>
                 </table>
             </div>
 
-            <div className='w-full max-w-4xl space-y-4 p-2'>
-                <div>
-                    <h3 id="hubs-containers" className='text-xl font-semibold'><a href="#hubs-containerized-services" className='hover:underline'>Other Hubs Services</a></h3>
+            <div className='w-full max-w-4xl space-y-4'>
+                <div className='p-2'>
+                    <h3 id="other-services" className='text-xl font-semibold'><a href="#other-services" className='hover:underline'>Other Hubs Services</a></h3>
                     <Divider className='!mt-1' />
                     <p>These services are required to run Hubs. These services exist outside the Kubernetes environment that hosts <a href="#hubs-containerized-services" className='underline'>Hubs' Containerized Services</a>:</p>
                 </div>
 
-                <table className='w-full inline-block mt-4 md:w-auto table-auto overflow-x-auto rounded-md'>
+                <table className='w-full inline-block mt-4 md:w-auto table-auto overflow-x-auto md:rounded-md'>
                     <thead className='text-xs uppercase bg-slate-700 text-slate-100'>
                         <tr>
                             <th scope="col" className="px-1 py-3">Service</th>
@@ -195,7 +239,7 @@ export const HubsCEComponents = ({ }) => {
                     <tbody>
                         <TableRow col1={
                             <div className='flex flex-col items-center gap-0'>
-                                <h4 id="container-hubs" className='text-xl font-semibold text-center'><a href="#container-hubs" className='hover:underline'><code>Google Cloud Storage</code></a></h4>
+                                <h4 id="gcs" className='text-xl font-semibold text-center'><a href="#gcs" className='hover:underline'><code>Google Cloud Storage</code></a></h4>
                                 <a className='underline text-sm' target="_blank" href='https://cloud.google.com/storage'>(link)<ArrowTopRightOnSquareIconSmall className='h-3 w-3 ml-1 relative inline-block' /></a>
                             </div>
                         } cols={[

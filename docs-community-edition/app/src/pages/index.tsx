@@ -67,9 +67,10 @@ const IndexPage = ({ }) => {
         <Layout>
             <SEO />
             <div className='mb-4 md:mb-8 w-full flex flex-col items-center'>
-                <header className='text-white pt-16 pb-8 md:py-8 w-full animate-gradient flex flex-col items-center relative' style={{ "background": "linear-gradient(107.97deg,#489cbe 6.73%,#5427c9 39.4%,#a8527c 77.18%,#a67878 104.75%)", "backgroundSize": "250% 250%" }}>
-                    <StaticImage placeholder='none' objectFit='contain' className="max-w-md my-4" src="../images/header-transparent.png" alt="Hubs Community Edition" quality={100} />
-                    <h3 className='text-xl underline mb-4'>Introductory Documentation</h3>
+                <header className='text-white pt-16 pb-8 md:py-8 px-2 w-full animate-gradient flex flex-col items-center relative' style={{ "background": "linear-gradient(107.97deg,#489cbe 6.73%,#5427c9 39.4%,#a8527c 77.18%,#a67878 104.75%)", "backgroundSize": "250% 250%" }}>
+                    <StaticImage placeholder='none' objectFit='contain' className="max-w-md mt-4 mb-2" src="../images/header-transparent.png" alt="Hubs Community Edition" quality={100} />
+                    <h3 className='text-xl underline'>Introductory Documentation</h3>
+                    <h4 className='text-sm mb-4'>Updated October 2023</h4>
                     <ThemeToggleSwitch className='text-slate-50' isLarge={true} />
                 </header>
             </div>
@@ -92,9 +93,9 @@ const IndexPage = ({ }) => {
                 <div className='!mt-8 space-y-16 md:space-y-24 w-full flex flex-col items-center'>
                     <WhatIsCommunityEdition />
 
-                    <DeployToGCP />
-
                     <DeployToCustom />
+
+                    <DeployToGCP />
 
                     <HubsCEComponents />
                 </div>

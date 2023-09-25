@@ -7,7 +7,7 @@ export const TableOfContents = ({ className }: { className?: string }) => {
     
     return (
         <nav className={className}>
-            <ul>
+            <ul className='space-y-0.5'>
                 {headings.map(heading => (
                     <li key={heading.id} style={{ marginLeft: `${(heading.level - 2) * 1.25}em`, fontSize: `${linearScale(heading.level, 2, 6, 1.25, 0.75)}rem` }}>
                         <a className='hover:underline' href={`#${heading.id}`} > {heading.text} </a>
