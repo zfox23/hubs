@@ -22,7 +22,7 @@ export const WhatIsCommunityEdition = ({ }) => {
                 <li>The Hubs team understood that many organizations need to deploy Hubs on cloud computing platforms that aren't Amazon's</li>
             </ul>
 
-            <p>To resolve these issues and more, the Hubs team sunset Hubs Cloud and launched <span className='font-semibold'>Hubs Community Edition</span>.</p>
+            <p>To resolve these issues and more, the Hubs team is ceasing support for Hubs Cloud on January 1, 2024 and launching <span className='font-semibold'>Hubs Community Edition</span>.</p>
             <p>With <span className='font-semibold'>Hubs Community Edition</span>, anyone can deploy the <i className='font-semibold'>full Hubs stack</i> on <i className='font-semibold'>any</i> Linux-based infrastrucure, including AWS, Google Cloud, and even your own Linux computer.</p>
 
             <p>Continue reading to learn how to deploy Hubs Community Edition. You can also <a className="underline text-blue-900 dark:text-blue-100" href="#hubs-ce-infrastructure">skip ahead to learn more about the infrastructure of the Hubs CE software stack.</a></p>
