@@ -67,7 +67,7 @@ export const HubsCEComponents = ({ }) => {
                     </div>
                 </div>
 
-                <p><span className='font-semibold'>Many components of Hubs Community Edition runs inside separate Docker Containers.</span> By themselves, these Containers don't know much about each other. For example, if you ran the <code>Reticulum</code> Container on your computer, but didn't run the <code>Dialog WebRTC communication</code> Container, people who connected to your Hub would be able to see each other, but not hear each other.</p>
+                <p><span className='font-semibold'>Many components of Hubs Community Edition run inside separate Docker Containers.</span> By themselves, these Containers don't know much about each other. For example, if you ran the <code>Reticulum</code> Container on your computer, but didn't run the <code>Dialog WebRTC communication</code> Container, people who connected to your Hub would be able to see each other, but not hear each other.</p>
 
                 <p>So, we need some way for these Containers to connect to each other. We need some way for people who connect to a given Hub to also be able to connect to that Hub's associated Dialog server. We need to be able to, for example, update the Dialog container's code without bringing down the Reticulum container. How do we coordinate all of these Containers? 😵‍💫</p>
 
