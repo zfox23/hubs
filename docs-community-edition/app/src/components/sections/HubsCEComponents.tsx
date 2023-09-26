@@ -106,7 +106,9 @@ export const HubsCEComponents = ({ }) => {
                         </li>
                     </ol>
 
-                    <p>To deploy software built using Kubernetes, a developer must supply the K8s executable with a plain-text configuration file describing relevant containers, the computing resources that a container needs to function, networking information, and more. This configuration file is called a <a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment'>deployment spec<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>.</p>
+                    <StaticImage objectFit='contain' className='mx-auto w-full rounded-md' src="../../images/kubernetes-cluster.png" alt="Kubernetes Cluster diagram" quality={100} />
+
+                    <p>To deploy software built using Kubernetes, a developer must supply the K8s executable with a plain-text configuration file describing the cluster's pods, those pods' containers, the computing resources that a container needs to function, networking information, and more. This configuration file is called a <a className='underline text-blue-900 dark:text-blue-100' target="_blank" href='https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment'>deployment spec<ArrowTopRightOnSquareIcon className='h-4 w-4 ml-1 -top-0.5 relative inline-block' /></a>.</p>
 
                     <div className='p-4 rounded-md bg-green-50 dark:bg-green-800/20 relative'>
                         <div className='p-1 overflow-clip w-16 absolute top-0.5 left-0 bottom-0 flex items-start justify-center z-0'>
